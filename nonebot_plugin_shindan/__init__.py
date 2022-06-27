@@ -48,7 +48,7 @@ set_usage = """Usage:
 如：设置占卜 360578 text"""
 
 cmd_sd = on_command(
-    "占卜", aliases={"shindan", "shindanmaker"}, rule=to_me(), block=True, priority=13
+    "shindan", aliases={"趣味占卜", "shindanmaker"}, rule=to_me(), block=True, priority=13
 )
 cmd_ls = on_command("占卜列表", aliases={"可用占卜"}, block=True, priority=13)
 cmd_add = on_command("添加占卜", permission=SUPERUSER, block=True, priority=13)
